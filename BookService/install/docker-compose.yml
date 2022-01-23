@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  bookservice:
+    build: .
+    ports:
+      - "8090:8090"
+    environment:
+      - BOOKSTORE_DB_HOST=${BOOKSTORE_DB_HOST}
+      - BOOKSTORE_DB_USER=${BOOKSTORE_DB_USER}
+      - BOOKSTORE_DB_PW=${BOOKSTORE_DB_PW}
+      - BOOKSTORE_PORT=${BOOKSTORE_PORT}

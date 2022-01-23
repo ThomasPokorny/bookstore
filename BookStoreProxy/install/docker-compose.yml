@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  bookproxy:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - BOOKSTORE_SERVICE_HOST=${BOOKSTORE_SERVICE_HOST}
